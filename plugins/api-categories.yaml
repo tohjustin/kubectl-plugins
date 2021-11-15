@@ -1,0 +1,47 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: api-categories
+spec:
+  version: v0.1.0
+  platforms:
+  - bin: kube-api-categories.exe
+    uri: https://github.com/tohjustin/kube-api-categories/releases/download/v0.1.0/kube-api-categories_windows_amd64.zip
+    sha256: 12c8e6c2e37f509f812ea10871c01de2a2480db946f5f4eae7c832822e5c3e97
+    selector:
+      matchLabels:
+        os: windows
+        arch: amd64
+  - bin: kube-api-categories
+    uri: https://github.com/tohjustin/kube-api-categories/releases/download/v0.1.0/kube-api-categories_linux_arm64.tar.gz
+    sha256: 12599da922ede85708dbef5e3816a7fbf1c9ccefde237208f4ee48936347ae06
+    selector:
+      matchLabels:
+        os: linux
+        arch: arm64
+  - bin: kube-api-categories
+    uri: https://github.com/tohjustin/kube-api-categories/releases/download/v0.1.0/kube-api-categories_linux_amd64.tar.gz
+    sha256: 40e7d8717277c00cf81e7d222e7badb81cc4ff07649e72bdcf95b1f6a937ddb2
+    selector:
+      matchLabels:
+        os: linux
+        arch: amd64
+  - bin: kube-api-categories
+    uri: https://github.com/tohjustin/kube-api-categories/releases/download/v0.1.0/kube-api-categories_darwin_arm64.tar.gz
+    sha256: 3654360cbc6c4b17d5236fa8f4b2a4c53d7472646129d5f54351625e6bc673b7
+    selector:
+      matchLabels:
+        os: darwin
+        arch: arm64
+  - bin: kube-api-categories
+    uri: https://github.com/tohjustin/kube-api-categories/releases/download/v0.1.0/kube-api-categories_darwin_amd64.tar.gz
+    sha256: 4f337a898904221358b9264e5aab2129db8fc45fd099e38dd882618094a1234e
+    selector:
+      matchLabels:
+        os: darwin
+        arch: amd64
+  shortDescription: Print the supported API resources their categories
+  homepage: https://github.com/tohjustin/kube-api-categories
+  description: |
+    This plugin prints a table of supported API resources their categories on
+    the server.
