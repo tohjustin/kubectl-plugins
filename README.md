@@ -39,5 +39,5 @@ $ kubectl krew index remove tohjustin
 
 | Name | Description | Repository |
 | ---- | ----------- | ---------- |
-| api-categories | Print the supported API resources their categories       | ![kube-api-categories star count](https://aegisbadges.appspot.com/github/stars/tohjustin/kube-api-categories?color=379AF7) |
-| lineage        | Display all dependent resources or resource dependencies | ![kube-lineage star count](https://aegisbadges.appspot.com/github/stars/tohjustin/kube-lineage?color=379AF7) |
+| [api-categories](https://github.com/tohjustin/kube-api-categories) | Print the supported API resources their categories       | ![kube-api-categories star count](https://aegisbadges.appspot.com/github/stars/tohjustin/kube-api-categories?color=379AF7) |
+| [lineage](https://github.com/tohjustin/kube-lineage)               | Display all dependent resources or resource dependencies | ![kube-lineage star count](https://aegisbadges.appspot.com/github/stars/tohjustin/kube-lineage?color=379AF7) |
